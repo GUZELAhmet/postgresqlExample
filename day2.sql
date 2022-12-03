@@ -1,4 +1,4 @@
-CREATE TABLE ogrenciler5
+CREATE TABLE ogrenciler3
 (
 ogrenci_no char(7),-- Uzunluğunu bildiğimiz stringler için CHAR kullanılır
 isim varchar(20), -- Uzunluğunu bilmediğimiz stringler için VARCHAR kullanırız
@@ -8,7 +8,7 @@ kayit_tarih date);
 -- VAROLAN BİR TABLODAN YENİ BİR TABLO OLUŞTURMA
 CREATE TABLE NOTLAR
 AS
-SELECT isim,not_ort FROM ogrenciler5;
+SELECT isim,not_ort FROM ogrenciler3;
 select * from notlar;
 --INSERT- TABLO İÇİNE VERİ EKLEME
 INSERT INTO notlar VALUES ('Osman',95.5);
@@ -206,5 +206,6 @@ INSERT INTO ogrenciler3 VALUES(126, 'Nesibe Yilmaz', 'Ayse',95);
 INSERT INTO ogrenciler3 VALUES(127, 'Mustafa Bak', 'Can',99);
 INSERT INTO ogrenciler3 VALUES(127, 'Mustafa Bak', 'Ali', 99);
 
+select * from ogrenciler3
 
 
